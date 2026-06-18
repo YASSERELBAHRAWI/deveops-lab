@@ -1,9 +1,9 @@
 name: First CI
 on:
-  push
+  push:
 
 jobs:
-    hello-job
+    hello-job:
       runs-on: ubuntu-latest
       steps:
         - name: Print Message
