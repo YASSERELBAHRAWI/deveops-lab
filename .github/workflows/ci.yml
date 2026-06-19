@@ -1,10 +1,16 @@
-name: First CI
+name: advanced CI
 on:
   push:
 
 jobs:
-    hello-job:
+  build:
       runs-on: ubuntu-latest
       steps:
-        - name: Print Message
-          run: echo "Hello DevOps"
+        - name:Build Step
+          run: echo "Building..."
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test Step
+        run: echo "Testing..." 
