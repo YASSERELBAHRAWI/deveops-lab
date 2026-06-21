@@ -6,8 +6,8 @@ jobs:
   build:
       runs-on: ubuntu-latest
       steps:
-        - name: Build Step
-          run: echo "Building..."
+        - name: Build Docker Image
+          run: docker build -t myapp .
   test:
     runs-on: ubuntu-latest
 
