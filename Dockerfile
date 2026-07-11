@@ -1,4 +1,7 @@
-FROM python:3.10
-COPY app.py /app.py
-CMD ["python","/app.py"]
+FROM jenkins/jenkins:lts
+USER root
+RUN apt-get update && apt-get install -y docker.io
+USER jenkins
+
+
 
