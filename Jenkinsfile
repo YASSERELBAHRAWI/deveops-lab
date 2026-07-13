@@ -21,7 +21,20 @@ pipeline {
 
             } 
 
-        } 
+        }
+        stage('Credentials Demo') {
+
+            steps {
+
+                withCredentials([string(credentialsId: 'github -token', variable: 'TOKEN')]) {
+
+                    sh 'echo "Token Loaded Successfully"'
+
+                }
+
+            }
+
+        }
         stage('Testing') {
             
             steps {
