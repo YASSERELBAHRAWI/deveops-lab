@@ -28,7 +28,7 @@ pipeline {
 
                 withCredentials([string(credentialsId: 'github-token', variable: 'TOKEN')]) {
 
-                    sh 'echo "Token Loaded Successfully"'
+                    sh 'echo'echo $TOKEN'
 
                 }
 
