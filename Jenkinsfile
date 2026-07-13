@@ -1,6 +1,14 @@
 pipeline {
    
-     agent any 
+     agent any
+     
+     enviroment {
+
+         IMAGE_NAME = "myapp"
+
+         version = "1.0"
+
+     }
 
      stages {
         
