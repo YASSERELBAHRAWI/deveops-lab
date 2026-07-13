@@ -25,7 +25,7 @@ pipeline {
 
             steps {
 
-                sh 'docker build -t myapp .'
+                sh 'docker build -t $IMAGE_NAME:$VERSION .'
 
             } 
 
