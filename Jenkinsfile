@@ -26,7 +26,7 @@ pipeline {
 
             steps {
 
-                withCredentials([string(credentialsId: 'github -token', variable: 'TOKEN')]) {
+                withCredentials([string(credentialsId: 'github-token', variable: 'TOKEN')]) {
 
                     sh 'echo "Token Loaded Successfully"'
 
