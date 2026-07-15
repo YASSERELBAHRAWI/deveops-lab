@@ -2,7 +2,7 @@ pipeline {
    
      agent any
      
-     enviroment {
+     environment {
 
          IMAGE_NAME = "myapp"
 
